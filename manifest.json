@@ -1,6 +1,6 @@
 {
-    "name" : "运动手表演示",
-    "appid" : "",
+    "name" : "Bobby",
+    "appid" : "__UNI__E0813AA",
     "description" : "",
     "versionName" : "1.0.7",
     "versionCode" : 107,
@@ -71,14 +71,14 @@
                         "spotlight@2x" : "unpackage/res/icons/80x80.png"
                     },
                     "iphone" : {
-                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@2x" : "static/github.png",
                         "app@3x" : "unpackage/res/icons/180x180.png",
                         "notification@2x" : "unpackage/res/icons/40x40.png",
                         "notification@3x" : "unpackage/res/icons/60x60.png",
                         "settings@2x" : "unpackage/res/icons/58x58.png",
                         "settings@3x" : "unpackage/res/icons/87x87.png",
                         "spotlight@2x" : "unpackage/res/icons/80x80.png",
-                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                        "spotlight@3x" : "static/github.png"
                     }
                 }
             },
@@ -95,7 +95,7 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx56eedce510603185",
         "setting" : {
             "urlCheck" : true,
             "minified" : true,

@@ -33,7 +33,7 @@
 						</view>
 					</view>
 					<view class="content">
-						https://github.com/AmosHuKe/Watch-Test
+						https://github.com/cncn123
 					</view>
 				</view>
 			</view>
@@ -295,7 +295,6 @@
 	font-size: 24upx; 
 	margin-bottom: 10upx;
 }
-
 .tagb{
 	font-size: 40upx;
 	width: 40upx;
@@ -309,7 +308,6 @@
 	margin-top: 36upx;
 }
 /*uCharts end*/
-
 .today_run{
 	position: relative;
     left: 30px;

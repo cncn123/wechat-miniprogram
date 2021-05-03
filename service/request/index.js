@@ -12,7 +12,8 @@ http.setConfig((config) => { /* 设置全局配置 */
 	
 	//#ifdef MP-WEIXIN
 	//由于微信小程序接口地址需要认证，这里还是采用原easymock地址
-	config.baseUrl = 'https://www.easy-mock.com/mock/5d1443deed2ae904ba2cdd78/mock/'; //默认请求地址
+	// config.baseUrl = 'https://www.easy-mock.com/mock/5d1443deed2ae904ba2cdd78/mock/'; //默认请求地址
+	config.baseUrl = 'http://18.116.62.157:8081/'; //默认请求地址
 	//#endif
 	
 	config.header = {
