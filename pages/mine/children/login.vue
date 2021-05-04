@@ -115,7 +115,7 @@
 				setTimeout(function() {
 					getLogin()
 						.then(res => {
-							console.log(res.result.data[0])
+							// console.log(res.result.data[0])
 							res = res.result.data[0]
 							//简单验证下登录（不安全）
 							if (_this.phoneData == res.username && _this.passData == res.password) {
