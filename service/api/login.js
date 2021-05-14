@@ -9,7 +9,7 @@ import {
  * 检测登录状态 只是通过请求触发过滤器，用以判断是否登录 否则跳转到登录
  * @returns {Promise}
  */
-export function getisLogin() {
+export async function getisLogin() {
 	let datas = {}
 	let config = {}
 	//#ifndef MP-WEIXIN
@@ -17,9 +17,15 @@ export function getisLogin() {
 	//#endif
 	//#ifdef MP-WEIXIN
 	// let e = http.post("login", datas, config);
-	let e = http.get("login", datas, config);
+	// let e = http.get("login", datas, config);
+	return await uniCloud.callFunction({
+		name: 'login',
+		data: {
+			data: datas
+		}
+	})
 	//#endif
-	return e;
+	// return e;
 }
 
 /**
