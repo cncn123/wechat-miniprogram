@@ -132,7 +132,7 @@
 					//获取轮播数据
 					getSwiper()
 					.then(res => {
-						console.log(res)
+						// console.log(res)
 						res = res.result;
 						_this.swiperList=res.data;
 						_this.$store.dispatch("setSwiperData",res.data); //存入状态
@@ -167,7 +167,7 @@
 					//获取统计数据
 					getRing()
 					.then(res => {
-						console.log(res.result)
+						// console.log(res.result)
 						res = res.result;
 						const data=res.data; //获取统计数据
 						_this.ringList=data; //赋值统计数据
