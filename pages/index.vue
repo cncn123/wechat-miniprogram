@@ -4,7 +4,7 @@
 			<home v-if="PageCur=='home'"></home> <!-- 首页 -->
 			<motion v-if="PageCur=='motion'"></motion> <!-- 运动 -->
 			<ble v-if="PageCur=='ble'"></ble> <!-- 设备蓝牙 -->
-			<goal v-if="PageCur=='goal'"></goal> <!-- 目标 -->
+			<edu v-if="PageCur=='edu'"></edu> <!-- 目标 -->
 			<mine v-if="PageCur=='mine'"></mine> <!-- 我的 -->
 		</view>
 		
@@ -19,11 +19,11 @@
 				<button class="cu-btn cuIcon-add bg-black shadow" @click="NavChange" data-cur="ble"></button>
 				设备
 			</view>
-			<view class="action" :class="PageCur=='goal'?'text-black':'text-gray'" @click="NavChange" data-cur="goal">
-				<view class="cuIcon-remind">
+			<view class="action" :class="PageCur=='edu'?'text-black':'text-gray'" @click="NavChange" data-cur="edu">
+				<view class="cuIcon-rank">
 					<view class="cu-tag badge">2</view>
 				</view>
-				目标
+				数据
 			</view>
 			<view class="action" :class="PageCur=='mine'?'text-black':'text-gray'" @click="NavChange" data-cur="mine">
 				<view class="cuIcon-my">
@@ -56,6 +56,7 @@
 			'PageCur': function(newVal){
 				
 				var _this=this
+				console.log('new val', newVal)
 				if(newVal=="ble"){
 					//如果切换的蓝牙 就把底部菜单设为最顶层 避免蓝牙处弹出提示不方便切换菜单
 					_this.isTop=true

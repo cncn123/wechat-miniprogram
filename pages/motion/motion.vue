@@ -7,7 +7,7 @@
 		</cu-custom> -->
 
 		<!-- 通知 -->
-		<view class="content-notice bar-shadown" v-if="notice.contentmain==''?false:true "
+		<!-- <view class="content-notice bar-shadown" v-if="notice.contentmain==''?false:true "
 			:style="[{ backgroundColor:'rgba(0,0,0,0.2)',color:'#FFFFFF'}]">
 			<view class="flex">
 				<view class="flex-treble">
@@ -18,7 +18,7 @@
 					<text class="lg cuIcon-close"></text>
 				</view>
 			</view>
-		</view>
+		</view> -->
 
 		<scroll-view scroll-y class="page">
 			<!-- 顶部数据图 -->

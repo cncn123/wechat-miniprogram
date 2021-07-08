@@ -1,5 +1,8 @@
 <template>
 	<view class="home animation-fade">
+		<view class="bg">
+			<image class="bg-img" src="/static/home-bg.png" mode=""></image>
+		</view>
 		<scroll-view scroll-y class="page">
 			<!--轮播图 -->
 			<swiper
@@ -286,10 +289,25 @@
 	}
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .home{
 	margin-top: 100upx;
 }
+
+.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 400rpx;
+		z-index: -2;
+		
+		&-img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
 .swiperbox{
 	margin-bottom: 32upx;
 }
