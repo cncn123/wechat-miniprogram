@@ -1,5 +1,10 @@
 import Vue from 'vue'
 import App from './App'
+import Common from './static/js/common.js'
+import Config from './static/js/config.js'
+
+Vue.prototype.$Common = Common
+Vue.prototype.$Config = Config
 
 //顶部导航
 import cuCustom from './lib/colorui/components/cu-custom.vue'
@@ -16,6 +21,9 @@ Vue.component('ble',ble)
 //目标
 import goal from './pages/goal/goal.vue'
 Vue.component('goal',goal)
+//目标
+import edu from './pages/edu/edu.vue'
+Vue.component('edu',edu)
 //我的
 import mine from './pages/mine/mine.vue'
 Vue.component('mine',mine)

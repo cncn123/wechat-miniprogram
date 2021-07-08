@@ -10,9 +10,9 @@
 		</view>
 		
 		<view class="nav" :style="{ paddingTop: statusBarHeight + 'px' }">
-			<image class="nav-back" src="/static/back.png" mode="" @click="back"></image>
+<!-- 			<image class="nav-back" src="/static/back.png" mode="" @click="back"></image> -->
 			<text class="nav-title">我的信息</text>
-			<view class="nav-space"></view>
+			<!-- <view class="nav-space"></view> -->
 		</view>
 		
 		<view class="info" :style="{marginTop: statusBarHeight + 44 + 'px'}">
@@ -52,7 +52,9 @@
 				</text>
 			</view>
 		</view> -->
-		
+		<view class="main-title">
+			<text>功能列表</text>
+		</view>
 		<view class="cu-list menu sm-border card-menu margin-top bar-shadown">
 			<view class="cu-item arrow" >
 				<view class="content">
@@ -316,6 +318,13 @@
 <style lang="scss" scoped>
 	@import "../../style/color/color.scss";
 	
+	
+	.main-title {
+		padding: 30rpx 30rpx;
+		font-size: 34rpx;
+		color: #1C1C1C;
+	}
+	
 	.bg {
 		position: absolute;
 		top: 0;
@@ -351,6 +360,7 @@
 		&-title {
 			color: #FFFFFF;
 			font-size: 40rpx;
+			margin: auto;
 		}
 		
 		&-space {
