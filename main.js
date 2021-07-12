@@ -24,6 +24,9 @@ Vue.component('goal',goal)
 //目标
 import edu from './pages/edu/edu.vue'
 Vue.component('edu',edu)
+//数据
+import index from './pages/index/index.vue'
+Vue.component('index',index)
 //我的
 import mine from './pages/mine/mine.vue'
 Vue.component('mine',mine)

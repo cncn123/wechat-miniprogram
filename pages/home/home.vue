@@ -32,7 +32,7 @@
 					<view class="title">
 						<view class="text-cut">
 							<text class="cuIcon-title text-black"></text> 
-							Github地址(点击复制)
+							我的Github地址
 						</view>
 					</view>
 					<view class="content">

@@ -4,7 +4,8 @@
 			<home v-if="PageCur=='home'"></home> <!-- 首页 -->
 			<motion v-if="PageCur=='motion'"></motion> <!-- 运动 -->
 			<ble v-if="PageCur=='ble'"></ble> <!-- 设备蓝牙 -->
-			<edu v-if="PageCur=='edu'"></edu> <!-- 目标 -->
+			<!-- <edu v-if="PageCur=='edu'"></edu> <!-- 目标 --> -->
+			<index v-if="PageCur=='index'"></index> <!-- 目标 -->
 			<mine v-if="PageCur=='mine'"></mine> <!-- 我的 -->
 		</view>
 		
@@ -19,7 +20,7 @@
 				<button class="cu-btn cuIcon-add bg-black shadow" @click="NavChange" data-cur="ble"></button>
 				设备
 			</view>
-			<view class="action" :class="PageCur=='edu'?'text-black':'text-gray'" @click="NavChange" data-cur="edu">
+			<view class="action" :class="PageCur=='index'?'text-black':'text-gray'" @click="NavChange" data-cur="index">
 				<view class="cuIcon-rank">
 					<view class="cu-tag badge">2</view>
 				</view>
